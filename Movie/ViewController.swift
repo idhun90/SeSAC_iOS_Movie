@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
         // Button 테두리 곡률 변경
         playButton.layer.cornerRadius = 10
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         updateButtonUI(previewButton1, image: "겨울왕국2.png")
         updateButtonUI(previewButton2, image: "7번방의선물.png")
         updateButtonUI(previewButton3, image: "아바타.png")
-     
+        
         
         
         
@@ -77,15 +77,15 @@ class ViewController: UIViewController {
         backGroundImage.image = movieList.randomElement()
         
         // 방법2. UIImage(named:) 사용
-//        let movieList = [
-//            UIImage(named: "암살"), UIImage(named: "알라딘"), UIImage(named: "광해"), UIImage(named: "괴물"), UIImage(named: "겨울왕국2"), UIImage(named: "왕의남자")
-//        ]
-//
-//        backGroundImage.image = movieList.randomElement()!
+        // let movieList = [
+        // UIImage(named: "암살"), UIImage(named: "알라딘"), UIImage(named: "광해"), UIImage(named: "괴물"), UIImage(named: "겨울왕국2"), UIImage(named: "왕의남자")
+        //        ]
+        //
+        // backGroundImage.image = movieList.randomElement()!
         
-// #imageLiteral()을 사용해 배열 구성 시, randomElement() 강제 언래핑 불필요
-// UIImage(named:)을 사용해 배열 구성 시, randomElement()! 강제 언래핑 필요
-// 왜지? 원인 파악 필요
+        // #imageLiteral()을 사용해 배열 구성 시, randomElement() 강제 언래핑 불필요
+        // UIImage(named:)을 사용해 배열 구성 시, randomElement()! 강제 언래핑 필요
+        // 왜지? 원인 파악 필요
         
     }
 }
